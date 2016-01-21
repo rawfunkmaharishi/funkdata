@@ -61,11 +61,19 @@ module Funkdata
     end
 
     def self.get_venue s
-      s.match(/....-..-..-(.*)\.yml/)[1].split('-').map { |w| w.titlecase }.join ' '
+      split_name(s)[:venue].split('-').map { |w| w.titlecase }.join ' '
     end
 
     def self.get_date s
-      s.match(/(....-..-..).*/)[1]
+      split_name(s)[:date]
+    end
+
+    def self.split_name s
+      m = s.match(/(....-..-..)-(.*)\.yml/)
+      {
+        date: m[1],
+        venue: m[2]
+      }
     end
 
     def self.gig_url s
@@ -73,7 +81,7 @@ module Funkdata
         CONFIG['rfm']['base_url'],
         CONFIG['rfm']['gig_path'],
         get_date(s).gsub('-', '/'),
-        s.match(/....-..-..-(.*)\.yml/)[1]
+        split_name(s)[:venue]
       ].join('/') + '/'
     end
   end
