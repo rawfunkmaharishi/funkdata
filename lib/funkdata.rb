@@ -54,6 +54,20 @@ module Funkdata
       end
     end
 
+    get '/videos' do
+      headers 'Vary' => 'Accept'
+
+      respond_to do |wants|
+        wants.json do
+          Fetcher.get_videos.to_json
+        end
+
+        wants.html do
+          redirect to 'http://rawfunkmaharishi.uk/videos'
+        end
+      end
+    end
+
     # start the server if ruby file executed directly
     run! if app_file == $0
   end
