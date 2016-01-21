@@ -11,6 +11,7 @@ gem 'connection_pool'
 gem 'redis'
 gem 'httparty'
 gem 'dotenv'
+gem 'redcarpet'
 
 group :test do
   gem 'cucumber'
