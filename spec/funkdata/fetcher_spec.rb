@@ -10,18 +10,15 @@ module Funkdata
     it 'fetches gig data', :vcr do
       expect(described_class.get_gig 'https://api.github.com/repos/rawfunkmaharishi/rawfunkmaharishi.github.io/contents/gigs/_posts/2015-10-13-the-comedy.yml?ref=master').to include (
         {
-          'name' => '2015-10-13-the-comedy.yml',
-          'data' => {
-            'venue' => 'The Comedy',
-            'location' => 'The Comedy, Oxendon St, SW1',
-            'date' => '2015-10-13',
-            'time' => '21:00',
-            'price' => '£6',
-            'latitude' => 51.50979,
-            'longitude' => -0.13204,
-            'url' => 'http://rawfunkmaharishi.uk/gigs/2015/10/13/the-comedy/',
-            'facebook-event' => 'https://www.facebook.com/events/1629672733949677/'
-          }
+          'venue' => 'The Comedy',
+          'location' => 'The Comedy, Oxendon St, SW1',
+          'date' => '2015-10-13',
+          'time' => '21:00',
+          'price' => '£6',
+          'latitude' => 51.50979,
+          'longitude' => -0.13204,
+          'url' => 'http://rawfunkmaharishi.uk/gigs/2015/10/13/the-comedy/',
+          'facebook-event' => 'https://www.facebook.com/events/1629672733949677/'
         }
       )
     end

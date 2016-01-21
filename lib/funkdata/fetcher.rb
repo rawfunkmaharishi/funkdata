@@ -40,36 +40,24 @@ module Funkdata
 
     def self.get_gig url
       y = YAML.load(get(url))
-      y['data'] = YAML.load(get(y['download_url']))
-      y['data']['venue'] = get_venue y['name']
-      y['data']['date'] = get_date y['name']
-      y['data']['url'] = gig_url y['name']
-      y['data']['facebook-event'] = "https://www.facebook.com/events/#{y['data']['facebook_id']}/" if y['data']['facebook_id']
-      y['data'].delete 'facebook_id'
-
-      keys = [
-        'venue',
-        'location',
-        'date',
-        'time',
-        'price',
-        'latitude',
-        'longitude',
-        'url',
-        'facebook-event'
-      ]
+      data = YAML.load(get(y['download_url']))
 
       z = {}
-      keys.each do |k|
-        z[k] = y['data'][k] if y['data'][k]
-      end
-      y['data'] = z
+      z['venue'] = get_venue y['name']
+      z['location'] = data['location']
+      z['date'] = get_date y['name']
+      z['time'] = data['time']
+      z['price'] = data['price'] if data['price']
+      z['latitude'] = data['latitude']
+      z['longitude'] = data['longitude']
+      z['url'] = gig_url y['name']
+      z['facebook-event'] = "https://www.facebook.com/events/#{data['facebook_id']}/" if data['facebook_id']
 
-      y
+      z
     end
 
     def self.get_gigs
-      list_gigs.map { |g| get_gig(g['_links']['self'])['data'] }
+      list_gigs.map { |g| get_gig(g['_links']['self']) }
     end
 
     def self.get_venue s
