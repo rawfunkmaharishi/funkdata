@@ -43,8 +43,28 @@ module Funkdata
       y['data'] = YAML.load(get(y['download_url']))
       y['data']['venue'] = get_venue y['name']
       y['data']['date'] = get_date y['name']
-      y['data'].delete 'facebook_id'
       y['data']['url'] = gig_url y['name']
+      y['data']['facebook-event'] = "https://www.facebook.com/events/#{y['data']['facebook_id']}/" if y['data']['facebook_id']
+      y['data'].delete 'facebook_id'
+
+      keys = [
+        'venue',
+        'location',
+        'date',
+        'time',
+        'price',
+        'latitude',
+        'longitude',
+        'url',
+        'facebook-event'
+      ]
+
+      z = {}
+      keys.each do |k|
+        z[k] = y['data'][k] if y['data'][k]
+      end
+      y['data'] = z
+
       y
     end
 

@@ -19,15 +19,15 @@ module Funkdata
             'price' => '£6',
             'latitude' => 51.50979,
             'longitude' => -0.13204,
-            'url' => 'http://rawfunkmaharishi.uk/gigs/2015/10/13/the-comedy/'
-      #      'facebook-event' => 'https://www.facebook.com/events/1629672733949677/'
+            'url' => 'http://rawfunkmaharishi.uk/gigs/2015/10/13/the-comedy/',
+            'facebook-event' => 'https://www.facebook.com/events/1629672733949677/'
           }
         }
       )
     end
 
     it 'gets all the gigs', :vcr do
-
+      expect(described_class.get_gigs).to be_an Array
     end
 
     it 'extracts a venue name' do

@@ -20,22 +20,15 @@ module Funkdata
 
     get '/' do
       headers 'Vary' => 'Accept'
-
-      respond_to do |wants|
-        wants.html do
-          @content = '<h1>Hello from Funkdata</h1>'
-          @title = 'Funkdata'
-          erb :index, layout: :default
-        end
-
-        wants.json do
-          {
-            app: 'Funkdata'
-          }.to_json
-        end
-      end
+      @content = '<h1>Hello from Funkdata</h1>'
+      @title = 'Funkdata'
+      erb :index, layout: :default
     end
 
+    get '/gigs' do
+      headers 'Vary' => 'Accept'
+      Fetcher.get_gigs.to_json
+    end
     # start the server if ruby file executed directly
     run! if app_file == $0
   end
