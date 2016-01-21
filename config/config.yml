@@ -1,2 +1,7 @@
-base_url: https://api.github.com/repos/rawfunkmaharishi/rawfunkmaharishi.github.io/contents
-gig_path: gigs/_posts
+github:
+  base_url: https://api.github.com/repos/rawfunkmaharishi/rawfunkmaharishi.github.io/contents
+  gig_path: gigs/_posts
+
+rfm:
+  base_url: http://rawfunkmaharishi.uk
+  gig_path: gigs

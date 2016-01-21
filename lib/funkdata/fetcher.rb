@@ -33,7 +33,7 @@ module Funkdata
     end
 
     def self.list_gigs
-      url = [CONFIG['base_url'], CONFIG['gig_path']].join '/'
+      url = [CONFIG['github']['base_url'], CONFIG['github']['gig_path']].join '/'
       j = JSON.parse get(url)
       j.select { |g| g['_links']['self'].match /yml\?/ }
     end
@@ -44,6 +44,7 @@ module Funkdata
       y['data']['venue'] = get_venue y['name']
       y['data']['date'] = get_date y['name']
       y['data'].delete 'facebook_id'
+      y['data']['url'] = gig_url y['name']
       y
     end
 
@@ -57,6 +58,15 @@ module Funkdata
 
     def self.get_date s
       s.match(/(....-..-..).*/)[1]
+    end
+
+    def self.gig_url s
+      [
+        CONFIG['rfm']['base_url'],
+        CONFIG['rfm']['gig_path'],
+        get_date(s).gsub('-', '/'),
+        s.match(/....-..-..-(.*)\.yml/)[1]
+      ].join('/') + '/'
     end
   end
 end
