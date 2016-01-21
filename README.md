@@ -22,13 +22,17 @@ Content will be returned as JSON.
 
 ### `/gigs`
 
-Returns a list of gigs.
+Returns a list of gig metadata.
 
 ### `/pictures`
 
-Returns a list of currently-featured photographs.
+Returns a list of photograph metadata.
 
-More endpoints coming soon.
+### `/videos`
+
+Returns a list of video metadata.
+
+**More endpoints coming soon.**
 
 ## Your questions answered
 

@@ -36,6 +36,15 @@ module Funkdata
     #  require "pry" ; binding.pry
     end
 
+    def self.get_videos
+      y = YAML.load get([CONFIG['github']['raw_url'], CONFIG['github']['videos_path']].join('/'))
+      y.each do |v|
+        v['url'] = "https://vimeo.com/#{v['id']}"
+      end
+
+      y
+    end
+
     def self.get_pictures
       YAML.load get([CONFIG['github']['raw_url'], CONFIG['github']['pictures_path']].join('/'))
     end

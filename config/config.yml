@@ -4,6 +4,7 @@ github:
   raw_url: https://raw.githubusercontent.com/rawfunkmaharishi/rawfunkmaharishi.github.io/master
   sounds_path: _data/soundcloud.yaml
   pictures_path: _data/flickr.yaml
+  videos_path: _data/vimeo.yaml
 
 rfm:
   base_url: http://rawfunkmaharishi.uk
