@@ -22,7 +22,11 @@ Content will be returned as JSON.
 
 ### `/gigs`
 
-Returns a list of gigs (as JSON).
+Returns a list of gigs.
+
+### `/pictures`
+
+Returns a list of currently-featured photographs.
 
 More endpoints coming soon.
 

@@ -32,8 +32,16 @@ module Funkdata
       end
     end
 
+    def self.get_sounds
+    #  require "pry" ; binding.pry
+    end
+
+    def self.get_pictures
+      YAML.load get([CONFIG['github']['raw_url'], CONFIG['github']['pictures_path']].join('/'))
+    end
+
     def self.list_gigs
-      url = [CONFIG['github']['base_url'], CONFIG['github']['gig_path']].join '/'
+      url = [CONFIG['github']['api_url'], CONFIG['github']['gig_path']].join '/'
       j = JSON.parse get(url)
       j.select { |g| g['_links']['self'].match /yml\?/ }
     end

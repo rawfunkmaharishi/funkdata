@@ -1,6 +1,9 @@
 github:
-  base_url: https://api.github.com/repos/rawfunkmaharishi/rawfunkmaharishi.github.io/contents
+  api_url: https://api.github.com/repos/rawfunkmaharishi/rawfunkmaharishi.github.io/contents
   gig_path: gigs/_posts
+  raw_url: https://raw.githubusercontent.com/rawfunkmaharishi/rawfunkmaharishi.github.io/master
+  sounds_path: _data/soundcloud.yaml
+  pictures_path: _data/flickr.yaml
 
 rfm:
   base_url: http://rawfunkmaharishi.uk
