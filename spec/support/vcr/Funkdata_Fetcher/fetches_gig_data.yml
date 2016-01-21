@@ -1,0 +1,143 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/repos/rawfunkmaharishi/rawfunkmaharishi.github.io/contents/gigs/_posts/2013-12-05-269-bar.yml?client_id=<GITHUB_CLIENT_ID>&client_secret=<GITHUB_CLIENT_SECRET>&ref=master
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Funkdata v0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Thu, 21 Jan 2016 18:01:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1273'
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4999'
+      X-Ratelimit-Reset:
+      - '1453402914'
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Last-Modified:
+      - Wed, 23 Dec 2015 10:16:36 GMT
+      Etag:
+      - '"be63a2b8d087ad8932079c98102704ab"'
+      Vary:
+      - Accept
+      - Accept-Encoding
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - e183f7c661b1bbc2c987b3c4dc7b04e0
+      X-Github-Request-Id:
+      - 5102724B:135D2:F2EE06:56A11D12
+    body:
+      encoding: UTF-8
+      string: '{"name":"2013-12-05-269-bar.yml","path":"gigs/_posts/2013-12-05-269-bar.yml","sha":"51ff3600938c7140c7c1bf4f1f6ae60f57a5e784","size":112,"url":"https://api.github.com/repos/rawfunkmaharishi/rawfunkmaharishi.github.io/contents/gigs/_posts/2013-12-05-269-bar.yml?ref=master","html_url":"https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/gigs/_posts/2013-12-05-269-bar.yml","git_url":"https://api.github.com/repos/rawfunkmaharishi/rawfunkmaharishi.github.io/git/blobs/51ff3600938c7140c7c1bf4f1f6ae60f57a5e784","download_url":"https://raw.githubusercontent.com/rawfunkmaharishi/rawfunkmaharishi.github.io/master/gigs/_posts/2013-12-05-269-bar.yml","type":"file","content":"LS0tCmxvY2F0aW9uOiAgMjY5IEJhciwgMjY5IFdlc3QgRW5kIExhbmUsIE5X\nNgp0aW1lOiAgICAgICcyMjowMCcKbGF0aXR1ZGU6ICA1MS41NTA1OTQKbG9u\nZ2l0dWRlOiAtMC4xOTE2ODEKLS0tCg==\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/rawfunkmaharishi/rawfunkmaharishi.github.io/contents/gigs/_posts/2013-12-05-269-bar.yml?ref=master","git":"https://api.github.com/repos/rawfunkmaharishi/rawfunkmaharishi.github.io/git/blobs/51ff3600938c7140c7c1bf4f1f6ae60f57a5e784","html":"https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/gigs/_posts/2013-12-05-269-bar.yml"}}'
+    http_version: 
+  recorded_at: Thu, 21 Jan 2016 18:01:55 GMT
+- request:
+    method: get
+    uri: https://raw.githubusercontent.com/rawfunkmaharishi/rawfunkmaharishi.github.io/master/gigs/_posts/2013-12-05-269-bar.yml?client_id=<GITHUB_CLIENT_ID>&client_secret=<GITHUB_CLIENT_SECRET>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Funkdata v0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000
+      Etag:
+      - '"51ff3600938c7140c7c1bf4f1f6ae60f57a5e784"'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Cache-Control:
+      - max-age=300
+      X-Github-Request-Id:
+      - B91F131C:71A7:163ECBC:56A11D13
+      Content-Length:
+      - '112'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 21 Jan 2016 18:01:55 GMT
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-lhr6324-LHR
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Authorization,Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Fastly-Request-Id:
+      - 6465a80d9e1d4f3444d52f3b1850a19957aee66d
+      Expires:
+      - Thu, 21 Jan 2016 18:06:55 GMT
+      Source-Age:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: |
+        ---
+        location:  269 Bar, 269 West End Lane, NW6
+        time:      '22:00'
+        latitude:  51.550594
+        longitude: -0.191681
+        ---
+    http_version: 
+  recorded_at: Thu, 21 Jan 2016 18:01:56 GMT
+recorded_with: VCR 3.0.1
