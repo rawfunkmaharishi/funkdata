@@ -1,0 +1,11 @@
+language: ruby
+rvm:
+- 2.3.0
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: BQ5tOl0OGzgOO048pVFHScfN221Q/1dZwQYT25BWeCSjEOY8sKgAHsCqnoykwpn+lxDKlpODTyzOLk46+6VEoJlZFxZ4x3e4A8IXljofDlWUt8jedvNFhS9uXCfvxKuiBaiJY0Cm3Saxg0W8leSTGG1/1DsA+rlR2w3lGTperTF5/aAnkS7dFIbvcHmoBlGt1hh9E1iVkggwHLPHNrIra/mGXDLV5XlQx/o81qEn2auRwsoiNIvdRDUlyhr6RMD7WDGJTB7asIxnDV8leL4Kfmdp/9/o603/5bN7XmVSZZMjsgtbHVo2jSgdLXxWlQRD9x9m18E2LAThz2CoXCVFRw7V7rr5m9xnPgpVHhLNikLnrhffhzuMamAkJaVRcIQXCfhj8O/FEYPJJ4QFIfhl8P01Kq9r+Fnm9bg4RwZg5PduU5sLZyr/ZLog1SFtQxBKxSbtXgAaYdELPIyUr8BonQ21RWYUTNyrXUMuEhIjfX8N5Zgf0NwdWdsneB4RbIV9W3eCujNEB/qfgQQC5yXxp8TyESTjtVUa5gI8OWa/dVOLJ/OPDxzt3+2+g9ZuqKrYhirtDXDSnW62MaTTB32Qo3sA6X6AMS5loVf6XNZVJwvIdqPccxChuvXE92Acafh4/01Bv4U4dwUnTslnD8Za/brKyq/GFmDOZYyBKsp4i4o=
+  app: rawfunkdata
+  on:
+    repo: rawfunkmaharishi/funkdata

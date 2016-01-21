@@ -1,0 +1,5 @@
+[![Build Status](http://img.shields.io/travis/rawfunkmaharishi/funkdata.svg?style=flat-square)](https://travis-ci.org/rawfunkmaharishi/funkdata)
+[![Dependency Status](http://img.shields.io/gemnasium/rawfunkmaharishi/funkdata.svg?style=flat-square)](https://gemnasium.com/rawfunkmaharishi/funkdata)
+[![Coverage Status](http://img.shields.io/coveralls/rawfunkmaharishi/funkdata.svg?style=flat-square)](https://coveralls.io/r/rawfunkmaharishi/funkdata)
+[![Code Climate](http://img.shields.io/codeclimate/github/rawfunkmaharishi/funkdata.svg?style=flat-square)](https://codeclimate.com/github/rawfunkmaharishi/funkdata)
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://rawfunkmaharishi.mit-license.org)
