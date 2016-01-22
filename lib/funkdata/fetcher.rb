@@ -33,7 +33,8 @@ module Funkdata
     end
 
     def self.get_sounds
-    #  require "pry" ; binding.pry
+      y = YAML.load get([CONFIG['github']['raw_url'], CONFIG['github']['sounds_path']].join('/'))
+      y
     end
 
     def self.get_videos

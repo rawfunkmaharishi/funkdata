@@ -39,6 +39,20 @@ module Funkdata
       end
     end
 
+    get '/sounds' do
+      headers 'Vary' => 'Accept'
+
+      respond_to do |wants|
+        wants.json do
+          Fetcher.get_sounds.to_json
+        end
+
+        wants.html do
+          redirect to 'http://rawfunkmaharishi.uk/sounds'
+        end
+      end
+    end
+
     get '/pictures' do
       headers 'Vary' => 'Accept'
 

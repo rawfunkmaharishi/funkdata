@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://raw.githubusercontent.com/rawfunkmaharishi/rawfunkmaharishi.github.io/master/_data/vimeo.yaml?client_id=<GITHUB_CLIENT_ID>&client_secret=<GITHUB_CLIENT_SECRET>
+    uri: https://raw.githubusercontent.com/rawfunkmaharishi/rawfunkmaharishi.github.io/master/_data/soundcloud.yaml?client_id=<GITHUB_CLIENT_ID>&client_secret=<GITHUB_CLIENT_SECRET>
     body:
       encoding: US-ASCII
       string: ''
@@ -27,25 +27,25 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000
       Etag:
-      - '"abb91a3b4e4e470f8cddc50fcb231ff4c0fd78e6"'
+      - '"31c6aa4b14f13c5904f66cdf6039f64b973a866e"'
       Content-Type:
       - text/plain; charset=utf-8
       Cache-Control:
       - max-age=300
       X-Github-Request-Id:
-      - B91F1221:4972:376D11F:56A15DC4
+      - B91F121D:3E39:DDEFA6:56A29E19
       Content-Length:
-      - '779'
+      - '4282'
       Accept-Ranges:
       - bytes
       Date:
-      - Thu, 21 Jan 2016 22:37:57 GMT
+      - Fri, 22 Jan 2016 21:24:41 GMT
       Via:
       - 1.1 varnish
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-lcy1125-LCY
+      - cache-lcy1124-LCY
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -55,35 +55,131 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       X-Fastly-Request-Id:
-      - e2680b13da8394b6bc275d8225a586172459868c
+      - 9040e0d29db5737a17c1062ac4a66af338b35078
       Expires:
-      - Thu, 21 Jan 2016 22:42:57 GMT
+      - Fri, 22 Jan 2016 21:29:41 GMT
       Source-Age:
       - '0'
     body:
       encoding: UTF-8
       string: |
         ---
-        - title: Vilamendhoo 2015
-          id: 141292006
+        - title: Slinky
+          id: 236917458
+          url: http://soundcloud.com/rawfunkmaharishi/slinky-2
+          location: Rogue Studios
+          engineer: Alessio
+          date: '2015-11-25'
           license: Attribution-NonCommercial-ShareAlike
-          license_url: http://creativecommons.org/licenses/by-nc-sa/3.0/
+          license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+        - title: Don The Crown
+          id: 234830006
+          url: http://soundcloud.com/rawfunkmaharishi/don-the-crown-1
+          location: Rogue Studios
+          engineer: Alessio
+          date: '2015-11-25'
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+        - title: Plimsole
+          id: 217587811
+          url: http://soundcloud.com/rawfunkmaharishi/plimsole
+          location: |
+            Rogue Studios
+          date: '2015-07-30'
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+        - title: Made In Hong Kong
+          id: 207833308
+          url: http://soundcloud.com/rawfunkmaharishi/made-in-hong-kong
+          location: Rooz Studios
+          date: '2015-05-19'
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+        - title: Glockenspiel
+          id: 200762822
+          url: http://soundcloud.com/rawfunkmaharishi/glockenspiel
+          location: |
+            Rogue Studios
+          date: '2015-04-09'
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+        - title: Tortoise Stampede
+          id: 197173771
+          url: http://soundcloud.com/rawfunkmaharishi/tortoise-stampede
+          location: Rogue Studios
+          date: '2015-03-11'
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
         - title: Bernard
-          id: 117102891
+          id: 192841052
+          url: http://soundcloud.com/rawfunkmaharishi/bernard
+          location: Islington Academy
+          date: '2015-02-18'
           license: Attribution-NonCommercial-ShareAlike
-          license_url: http://creativecommons.org/licenses/by-nc-sa/3.0/
+          license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+        - title: Junalbandi
+          id: 193005357
+          url: http://soundcloud.com/rawfunkmaharishi/junalbandi-3
+          location: Islington Academy
+          date: '2015-02-18'
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+        - title: Beer, Of Course, But Why
+          id: 193006525
+          url: http://soundcloud.com/rawfunkmaharishi/beer-of-course-but-why
+          location: Islington Academy
+          date: '2015-02-18'
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+        - title: Hexaflexagon
+          id: 193008299
+          url: http://soundcloud.com/rawfunkmaharishi/hexaflexagon-1
+          location: Islington Academy
+          date: '2015-02-18'
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+        - title: Jessica's Cousin
+          id: 191308336
+          url: http://soundcloud.com/rawfunkmaharishi/jessicas-cousin
+          location: Rogue Studios
+          date: '2015-02-11'
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+        - title: Old Cotswold Legbar
+          id: 191432275
+          url: http://soundcloud.com/rawfunkmaharishi/old-cotswold-legbar-1
+          location: Rogue Studios
+          date: '2015-02-11'
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+        - title: Not Bernard
+          id: 190803089
+          url: http://soundcloud.com/rawfunkmaharishi/not-bernard
+          location: Rogue Studios
+          date: '2015-02-11'
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
         - title: Safety On Board
-          id: 111356018
+          id: 174628735
+          url: http://soundcloud.com/rawfunkmaharishi/safety-on-board
+          location: Enterprise Studios
+          date: '2014-10-14'
           license: Attribution-NonCommercial-ShareAlike
-          license_url: http://creativecommons.org/licenses/by-nc-sa/3.0/
-        - title: Trapped In Hawaii
-          id: 110133117
+          license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+        - title: Funk Taxi Berlin
+          id: 174065916
+          url: http://soundcloud.com/rawfunkmaharishi/funk-taxi-berlin
+          location: Enterprise Studios
+          date: '2014-10-14'
           license: Attribution-NonCommercial-ShareAlike
-          license_url: http://creativecommons.org/licenses/by-nc-sa/3.0/
-        - title: Discotheque Metamorphosis
-          id: 110132671
+          license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+        - title: Trapped In Hawaii (feat. Kim)
+          id: 162634747
+          url: http://soundcloud.com/rawfunkmaharishi/trapped-in-hawaii-feat-kim
+          location: Enterprise Studios
+          date: '2014-08-05'
           license: Attribution-NonCommercial-ShareAlike
-          license_url: http://creativecommons.org/licenses/by-nc-sa/3.0/
+          license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
     http_version: 
-  recorded_at: Thu, 21 Jan 2016 22:37:57 GMT
+  recorded_at: Fri, 22 Jan 2016 21:24:41 GMT
 recorded_with: VCR 3.0.1

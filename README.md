@@ -24,6 +24,10 @@ Content will be returned as JSON.
 
 Returns a list of gig metadata.
 
+### `/sounds`
+
+Returns a list of music metadata.
+
 ### `/pictures`
 
 Returns a list of photograph metadata.
