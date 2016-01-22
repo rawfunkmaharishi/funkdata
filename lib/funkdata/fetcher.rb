@@ -32,24 +32,6 @@ module Funkdata
       end
     end
 
-    def self.get_sounds
-      y = YAML.load get([CONFIG['github']['raw_url'], CONFIG['github']['sounds_path']].join('/'))
-      y
-    end
-
-    def self.get_videos
-      y = YAML.load get([CONFIG['github']['raw_url'], CONFIG['github']['videos_path']].join('/'))
-      y.each do |v|
-        v['url'] = "https://vimeo.com/#{v['id']}"
-      end
-
-      y
-    end
-
-    def self.get_pictures
-      YAML.load get([CONFIG['github']['raw_url'], CONFIG['github']['pictures_path']].join('/'))
-    end
-
     def self.list_gigs
       url = [CONFIG['github']['api_url'], CONFIG['github']['gig_path']].join '/'
       j = JSON.parse get(url)
@@ -114,6 +96,26 @@ module Funkdata
         get_date(s).gsub('-', '/'),
         split_name(s)[:venue]
       ].join('/') + '/'
+    end
+
+    def self.get_thing thing
+      YAML.load get([CONFIG['github']['raw_url'], CONFIG['github']["#{thing}_path"]].join('/'))
+    end
+
+    def self.method_missing method_name
+      mname = method_name.to_s
+
+      if mname[0..3] == 'get_'
+        subject = mname[4..-1]
+        thing = self.send(:get_thing, subject)
+        if subject == 'videos'
+          thing.each do |t|
+            t['url'] = "https://vimeo.com/#{t['id']}"
+          end
+        end
+
+        thing
+      end
     end
   end
 end
