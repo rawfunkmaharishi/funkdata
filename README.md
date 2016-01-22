@@ -20,6 +20,10 @@ Content will be returned as JSON.
 
 ## API
 
+### `/`
+
+Returns a list of available endpoints.
+
 ### `/gigs`
 
 Returns a list of gig metadata.
@@ -46,7 +50,7 @@ It's pulling data from the [Jekyll](https://github.com/rawfunkmaharishi/rawfunkm
 
 ### Why _data.rawfunkmaharishi.uk_?
 
-As a very wise person once told me, _Your website is your API_ - I'd very much prefer to serve this data from the main domain via content-negotiation, but Github Pages won't let me. If I find a satisfactory solution to this then this will definitely move there. For now, a request for _text/html_ will see your client redirected to the same path on the main website.
+As a very wise person once told me, _Your website is your API_ - I'd very much prefer to serve this data from the main domain via content-negotiation, but Github Pages won't let me. If I find a satisfactory solution to this then this will definitely move there. For now, a request for _text/html_ will see your client redirected to the same path on the main website (apart from _/_, obviously).
 
 What I'm trying to say is, this is quite possibly a temporary arrangement and should be considered _extremely_ alpha (like anybody's ever going to use this).
 

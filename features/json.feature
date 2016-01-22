@@ -4,6 +4,11 @@ Feature: Get JSON
   Background:
     Given I send and accept JSON
 
+  Scenario: Get the root JSON
+    When I send a GET request to "/"
+    Then the response status should be "200"
+    And the JSON response should have "$.[0]['name']" with the text "gigs"
+
   Scenario: Get JSON for gigs
     When I send a GET request to "/gigs"
     Then the response status should be "200"

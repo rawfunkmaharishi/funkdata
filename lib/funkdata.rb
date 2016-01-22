@@ -29,7 +29,20 @@ module Funkdata
         end
 
         wants.json do
-          # return a list of the other data, I think
+          e = request.env
+          l = []
+          [
+            'gigs',
+            'sounds',
+            'pictures',
+            'videos'
+          ].each do |ting|
+            h = {name: ting}
+            h[:url] = "#{e['rack.url_scheme']}://#{e['SERVER_NAME']}/#{ting}"
+            l.push h
+          end
+
+          l.to_json
         end
       end
     end
