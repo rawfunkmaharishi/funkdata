@@ -1,0 +1,209 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://raw.githubusercontent.com/rawfunkmaharishi/rawfunkmaharishi.github.io/master/_data/flickr.yaml?client_id=<GITHUB_CLIENT_ID>&client_secret=<GITHUB_CLIENT_SECRET>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Funkdata v0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000
+      Etag:
+      - '"271029c3358e885358cc54d502203f9e344f53ef"'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Cache-Control:
+      - max-age=300
+      X-Github-Request-Id:
+      - B91F1314:631F:A4BF9A:56A1F9C9
+      Content-Length:
+      - '6687'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 22 Jan 2016 09:43:37 GMT
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-lhr6331-LHR
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Authorization,Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Fastly-Request-Id:
+      - 44357cefc17a59262ed87ba5bc443c680d0f3aa4
+      Expires:
+      - Fri, 22 Jan 2016 09:48:37 GMT
+      Source-Age:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: |
+        ---
+        - title: New Cross Inn
+          date: '2015-07-06'
+          photo_page: https://www.flickr.com/photos/rawfunkmaharishi/19437246576/
+          photo_url: https://farm1.staticflickr.com/409/19437246576_69eeebcd10_m.jpg
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: https://creativecommons.org/licenses/by-nc-sa/2.0/
+          photographer: sam
+        - title: Raw Funk Maharishi
+          date: '2015-02-18'
+          photo_page: https://www.flickr.com/photos/cluttercup/15950875724/
+          photo_url: https://farm8.staticflickr.com/7398/15950875724_23d58be214_m.jpg
+          license: Attribution-NonCommercial
+          license_url: https://creativecommons.org/licenses/by-nc/2.0/
+          photographer: jane
+        - title: Raw Funk Maharishi
+          date: '2015-02-18'
+          photo_page: https://www.flickr.com/photos/cluttercup/16579675721/
+          photo_url: https://farm8.staticflickr.com/7418/16579675721_f765c42f99_m.jpg
+          license: Attribution-NonCommercial
+          license_url: https://creativecommons.org/licenses/by-nc/2.0/
+          photographer: jane
+        - title: Raw Funk Maharishi
+          date: '2015-02-18'
+          photo_page: https://www.flickr.com/photos/cluttercup/16393865760/
+          photo_url: https://farm8.staticflickr.com/7395/16393865760_bfbfc1c267_m.jpg
+          license: Attribution-NonCommercial
+          license_url: https://creativecommons.org/licenses/by-nc/2.0/
+          photographer: jane
+        - title: Raw Funk Maharishi
+          date: '2015-02-18'
+          photo_page: https://www.flickr.com/photos/cluttercup/15958752984/
+          photo_url: https://farm9.staticflickr.com/8658/15958752984_25fa81f121_m.jpg
+          license: Attribution-NonCommercial
+          license_url: https://creativecommons.org/licenses/by-nc/2.0/
+          photographer: jane
+        - title: Raw Funk Maharishi
+          date: '2015-02-18'
+          photo_page: https://www.flickr.com/photos/cluttercup/16395047119/
+          photo_url: https://farm9.staticflickr.com/8608/16395047119_942a0f35b1_m.jpg
+          license: Attribution-NonCommercial
+          license_url: https://creativecommons.org/licenses/by-nc/2.0/
+          photographer: jane
+        - title: The Comedy, October 2014
+          date: '2014-10-22'
+          photo_page: https://www.flickr.com/photos/rawfunkmaharishi/15010630514/
+          photo_url: https://farm6.staticflickr.com/5602/15010630514_0e44c0dfc4_m.jpg
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: https://creativecommons.org/licenses/by-nc-sa/2.0/
+          photographer: kim
+        - title: The Comedy, October 2014
+          date: '2014-10-22'
+          photo_page: https://www.flickr.com/photos/rawfunkmaharishi/15011213833/
+          photo_url: https://farm6.staticflickr.com/5612/15011213833_3d7c10b42d_m.jpg
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: https://creativecommons.org/licenses/by-nc-sa/2.0/
+          photographer: kim
+        - title: The Comedy, October 2014
+          date: '2014-10-22'
+          photo_page: https://www.flickr.com/photos/rawfunkmaharishi/15445789720/
+          photo_url: https://farm6.staticflickr.com/5616/15445789720_89fdbc98a6_m.jpg
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: https://creativecommons.org/licenses/by-nc-sa/2.0/
+          photographer: kim
+        - title: The Comedy, October 2014
+          date: '2014-10-22'
+          photo_page: https://www.flickr.com/photos/rawfunkmaharishi/15444724049/
+          photo_url: https://farm4.staticflickr.com/3946/15444724049_1281b5890a_m.jpg
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: https://creativecommons.org/licenses/by-nc-sa/2.0/
+          photographer: kim
+        - title: The Comedy, October 2014
+          date: '2014-10-22'
+          photo_page: https://www.flickr.com/photos/rawfunkmaharishi/15444839959/
+          photo_url: https://farm6.staticflickr.com/5598/15444839959_787064e003_m.jpg
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: https://creativecommons.org/licenses/by-nc-sa/2.0/
+          photographer: kim
+        - title: The Comedy, October 2014
+          date: '2014-10-22'
+          photo_page: https://www.flickr.com/photos/rawfunkmaharishi/15445504487/
+          photo_url: https://farm4.staticflickr.com/3956/15445504487_2b11ee4c80_m.jpg
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: https://creativecommons.org/licenses/by-nc-sa/2.0/
+          photographer: kim
+        - title: The Comedy, October 2014
+          date: '2014-10-22'
+          photo_page: https://www.flickr.com/photos/rawfunkmaharishi/15445493727/
+          photo_url: https://farm4.staticflickr.com/3953/15445493727_118b0a436b_m.jpg
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: https://creativecommons.org/licenses/by-nc-sa/2.0/
+          photographer: kim
+        - title: The Comedy, October 2014
+          date: '2014-10-22'
+          photo_page: https://www.flickr.com/photos/rawfunkmaharishi/15631479625/
+          photo_url: https://farm4.staticflickr.com/3933/15631479625_b6168ee903_m.jpg
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: https://creativecommons.org/licenses/by-nc-sa/2.0/
+          photographer: kim
+        - title: The Comedy, October 2014
+          date: '2014-10-22'
+          photo_page: https://www.flickr.com/photos/rawfunkmaharishi/15445376017/
+          photo_url: https://farm6.staticflickr.com/5602/15445376017_594364f209_m.jpg
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: https://creativecommons.org/licenses/by-nc-sa/2.0/
+          photographer: kim
+        - title: The Comedy, October 2014
+          date: '2014-10-22'
+          photo_page: https://www.flickr.com/photos/rawfunkmaharishi/15445769330/
+          photo_url: https://farm4.staticflickr.com/3937/15445769330_df00451025_m.jpg
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: https://creativecommons.org/licenses/by-nc-sa/2.0/
+          photographer: kim
+        - title: The Comedy, October 2014
+          date: '2014-10-22'
+          photo_page: https://www.flickr.com/photos/rawfunkmaharishi/15607642076/
+          photo_url: https://farm6.staticflickr.com/5611/15607642076_f358eb9331_m.jpg
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: https://creativecommons.org/licenses/by-nc-sa/2.0/
+          photographer: kim
+        - title: The Comedy, October 2014
+          date: '2014-10-22'
+          photo_page: https://www.flickr.com/photos/rawfunkmaharishi/15632187102/
+          photo_url: https://farm4.staticflickr.com/3935/15632187102_245b50a92f_m.jpg
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: https://creativecommons.org/licenses/by-nc-sa/2.0/
+          photographer: kim
+        - title: The Comedy, October 2014
+          date: '2014-10-22'
+          photo_page: https://www.flickr.com/photos/rawfunkmaharishi/15631338195/
+          photo_url: https://farm6.staticflickr.com/5606/15631338195_1dce26279b_m.jpg
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: https://creativecommons.org/licenses/by-nc-sa/2.0/
+          photographer: kim
+        - title: The Comedy, October 2014
+          date: '2014-10-22'
+          photo_page: https://www.flickr.com/photos/rawfunkmaharishi/15628658301/
+          photo_url: https://farm6.staticflickr.com/5609/15628658301_16132cf4ff_m.jpg
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: https://creativecommons.org/licenses/by-nc-sa/2.0/
+          photographer: kim
+    http_version: 
+  recorded_at: Fri, 22 Jan 2016 09:43:37 GMT
+recorded_with: VCR 3.0.1

@@ -21,8 +21,7 @@ module Funkdata
     get '/' do
       headers 'Vary' => 'Accept'
 
-      @content = '<h1>Hello from Funkdata</h1>'
-      @title = 'Funkdata'
+      @title = 'data.rawfunkmaharishi.uk'
       erb :index, layout: :default
     end
 

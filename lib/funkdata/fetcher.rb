@@ -64,7 +64,7 @@ module Funkdata
       z['location'] = data['location']
       z['date'] = get_date y['name']
       z['time'] = data['time']
-      z['price'] = data['price'] if data['price']
+      z['price'] = get_price data['price'] if data['price']
       z['latitude'] = data['latitude']
       z['longitude'] = data['longitude']
       z['url'] = gig_url y['name']
@@ -75,6 +75,19 @@ module Funkdata
 
     def self.get_gigs
       list_gigs.map { |g| get_gig(g['_links']['self']) }
+    end
+
+    def self.get_price p
+      parts = p.match(/([^0-9])*([0-9]*)/)
+      {
+        'amount' => parts[2].to_f,
+        'currency' => case parts[1]
+                        when /£/
+                          'GBP'
+                        else
+                         'GBP'
+                        end
+      }
     end
 
     def self.get_venue s

@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://raw.githubusercontent.com/rawfunkmaharishi/rawfunkmaharishi.github.io/master/_data/vimeo.yaml?client_id=<GITHUB_CLIENT_ID>&client_secret=<GITHUB_CLIENT_SECRET>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Funkdata v0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000
+      Etag:
+      - '"abb91a3b4e4e470f8cddc50fcb231ff4c0fd78e6"'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Cache-Control:
+      - max-age=300
+      X-Github-Request-Id:
+      - B91F1321:631F:A4BEE0:56A1F9C8
+      Content-Length:
+      - '779'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 22 Jan 2016 09:43:37 GMT
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-lhr6334-LHR
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Authorization,Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Fastly-Request-Id:
+      - 9ed76b4c1c83631e767d68e0f1cdacc7c27f5b42
+      Expires:
+      - Fri, 22 Jan 2016 09:48:37 GMT
+      Source-Age:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: |
+        ---
+        - title: Vilamendhoo 2015
+          id: 141292006
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: http://creativecommons.org/licenses/by-nc-sa/3.0/
+        - title: Bernard
+          id: 117102891
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: http://creativecommons.org/licenses/by-nc-sa/3.0/
+        - title: Safety On Board
+          id: 111356018
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: http://creativecommons.org/licenses/by-nc-sa/3.0/
+        - title: Trapped In Hawaii
+          id: 110133117
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: http://creativecommons.org/licenses/by-nc-sa/3.0/
+        - title: Discotheque Metamorphosis
+          id: 110132671
+          license: Attribution-NonCommercial-ShareAlike
+          license_url: http://creativecommons.org/licenses/by-nc-sa/3.0/
+    http_version: 
+  recorded_at: Fri, 22 Jan 2016 09:43:37 GMT
+recorded_with: VCR 3.0.1

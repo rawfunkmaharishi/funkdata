@@ -15,7 +15,10 @@ module Funkdata
             'location' => 'The Comedy, Oxendon St, SW1',
             'date' => '2015-10-13',
             'time' => '21:00',
-            'price' => '£6',
+            'price' => {
+              'amount' => 6.0,
+              'currency' => 'GBP'
+            },
             'latitude' => 51.50979,
             'longitude' => -0.13204,
             'url' => 'http://rawfunkmaharishi.uk/gigs/2015/10/13/the-comedy/',
@@ -34,6 +37,15 @@ module Funkdata
 
       it 'extracts a date' do
         expect(described_class.get_date '2015-10-13-the-comedy.yml').to eq '2015-10-13'
+      end
+
+      it 'gets a price' do
+        expect(described_class.get_price '£6').to eq (
+          {
+            'amount' => 6,
+            'currency' => 'GBP'
+          }
+        )
       end
 
       it 'constructs a URL' do
