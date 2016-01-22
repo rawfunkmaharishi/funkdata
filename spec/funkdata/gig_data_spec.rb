@@ -1,5 +1,5 @@
 module Funkdata
-  describe Fetcher do
+  describe GigFetcher do
     context 'gig data' do
       it 'lists gig YAMLs', :vcr do
         expect(described_class.list_gigs).to be_an Array

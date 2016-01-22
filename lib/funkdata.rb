@@ -9,6 +9,7 @@ require_relative 'funkdata/racks'
 require_relative 'funkdata/helpers'
 require_relative 'funkdata/version'
 require_relative 'funkdata/fetcher'
+require_relative 'funkdata/gig_fetcher'
 
 Dotenv.load
 
@@ -21,62 +22,28 @@ module Funkdata
     get '/' do
       headers 'Vary' => 'Accept'
 
-      @title = 'data.rawfunkmaharishi.uk'
-      erb :index, layout: :default
+      respond_to do |wants|
+        wants.html do
+          @title = 'data.rawfunkmaharishi.uk'
+          erb :index, layout: :default
+        end
+
+        wants.json do
+          # return a list of the other data, I think
+        end
+      end
     end
 
-    get '/gigs' do
+    get '/:path' do
       headers 'Vary' => 'Accept'
 
       respond_to do |wants|
         wants.json do
-          Fetcher.get_gigs.to_json
+          Fetcher.send("get_#{params[:path]}").to_json
         end
 
         wants.html do
           redirect to 'http://rawfunkmaharishi.uk/gigs'
-        end
-      end
-    end
-
-    get '/sounds' do
-      headers 'Vary' => 'Accept'
-
-      respond_to do |wants|
-        wants.json do
-          Fetcher.get_sounds.to_json
-        end
-
-        wants.html do
-          redirect to 'http://rawfunkmaharishi.uk/sounds'
-        end
-      end
-    end
-
-    get '/pictures' do
-      headers 'Vary' => 'Accept'
-
-      respond_to do |wants|
-        wants.json do
-          Fetcher.get_pictures.to_json
-        end
-
-        wants.html do
-          redirect to 'http://rawfunkmaharishi.uk/pictures'
-        end
-      end
-    end
-
-    get '/videos' do
-      headers 'Vary' => 'Accept'
-
-      respond_to do |wants|
-        wants.json do
-          Fetcher.get_videos.to_json
-        end
-
-        wants.html do
-          redirect to 'http://rawfunkmaharishi.uk/videos'
         end
       end
     end
