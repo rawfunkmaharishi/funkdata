@@ -56,7 +56,7 @@ module Funkdata
         end
 
         wants.html do
-          redirect to 'http://rawfunkmaharishi.uk/gigs'
+          redirect to "http://rawfunkmaharishi.uk/#{params[:path]}"
         end
       end
     end

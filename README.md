@@ -10,6 +10,8 @@ _A data API for the band_
 
 The [band website](http://rawfunkmaharishi.uk/) is very [data-driven](http://rawfunkmaharishi.uk/blog/2014/11/12/being-data-driven/#data-driven-gigs), but [Jekyll](http://jekyllrb.com/) (at least on Github Pages) will not let us publish JSON. This clearly needs to be fixed.
 
+---
+
 ## Content negotiation
 
 The API will respond to the following _Accept_ values with appropriate content:
@@ -17,6 +19,8 @@ The API will respond to the following _Accept_ values with appropriate content:
 ### `application/json`
 
 Content will be returned as JSON.
+
+---
 
 ## API
 
@@ -42,6 +46,8 @@ Returns a list of video metadata.
 
 **More endpoints coming soon.**
 
+---
+
 ## Your questions answered
 
 ### How does this work?
@@ -57,6 +63,8 @@ What I'm trying to say is, this is quite possibly a temporary arrangement and sh
 ### Why are you doing this?
 
 Have you _met_ me?
+
+---
 
 ## Licensing
 
