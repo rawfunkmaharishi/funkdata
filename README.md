@@ -44,6 +44,14 @@ Returns a list of photograph metadata.
 
 Returns a list of video metadata.
 
+### [`/photographers`](http://data.rawfunkmaharishi.uk/photographers.json)
+
+Returns a list of photographer metadata.
+
+### `/photographers/:photographer`
+
+Returns metadata for a photographer.
+
 **More endpoints coming soon.**
 
 ---
