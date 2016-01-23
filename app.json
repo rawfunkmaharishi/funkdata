@@ -1,0 +1,11 @@
+{
+  "name": "funkdata",
+  "env": {
+    "REDIS_URL": {
+      "required": true
+    }
+  },
+  "addons": [
+    "heroku-redis"
+  ]
+}
