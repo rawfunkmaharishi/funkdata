@@ -65,7 +65,8 @@ module Funkdata
     get '/photographers/:name' do
       respond_to do |wants|
         wants.json do
-          Fetcher.get_photographers.select { |p| p['name'] == params[:name] }[0].to_json
+          Fetcher.photographer(params[:name]).to_json
+    #      Fetcher.get_photographers.select { |p| p['name'] == params[:name] }[0].to_json
         end
 
         wants.html do
