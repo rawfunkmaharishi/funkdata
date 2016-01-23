@@ -69,7 +69,7 @@ module Funkdata
         end
 
         wants.html do
-          redirect to "http://rawfunkmaharishi.uk/"
+          redirect to 'http://rawfunkmaharishi.uk/'
         end
       end
     end

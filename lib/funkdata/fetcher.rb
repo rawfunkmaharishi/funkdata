@@ -40,15 +40,26 @@ module Funkdata
       YAML.load get([CONFIG['github']['urls']['raw'], CONFIG['github']['paths'][thing]].join('/'))
     end
 
+    def self.photographer name
+      get_photographers.select { |p| p['name'] == name }[0].delete_if { |k, v| v == {} }
+    end
+
     def self.method_missing method_name
       mname = method_name.to_s
 
       if mname[0..3] == 'get_'
         subject = mname[4..-1]
         thing = self.send(:get_thing, subject)
+
         if subject == 'videos'
           thing.each do |t|
             t['url'] = "https://vimeo.com/#{t['id']}"
+          end
+        end
+
+        if subject == 'pictures'
+          thing.each do |t|
+            t['photographer'] = photographer(t['photographer'])
           end
         end
 
