@@ -67,6 +67,16 @@ module Funkdata
           thing = thing.keys.map { |p| {'name' => p, 'website' => thing.dig(p, 'website') || {} }}
         end
 
+        thing.each do |t|
+          if t.has_key? 'license'
+            t['license'] = {
+              'type' => t['license'],
+              'url' => t['license_url']
+            }
+            t.delete 'license_url'
+          end
+        end
+
         thing
       end
     end
