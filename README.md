@@ -75,5 +75,5 @@ Have you _met_ me?
 ---
 
 ## Licensing
-<script src='https://certificates.theodi.org/en/datasets/213444/certificate/badge.js'></script>
+
 All of this data is released under a [Creative Commons Attribution Share-alike license](http://creativecommons.org/licenses/by-sa/4.0/).
