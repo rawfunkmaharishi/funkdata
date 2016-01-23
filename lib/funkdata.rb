@@ -35,7 +35,8 @@ module Funkdata
             'gigs',
             'sounds',
             'pictures',
-            'videos'
+            'videos',
+            'photographers'
           ].each do |ting|
             h = {name: ting}
             h[:url] = "#{e['rack.url_scheme']}://#{e['SERVER_NAME']}/#{ting}"

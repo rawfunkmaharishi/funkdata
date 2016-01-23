@@ -52,6 +52,12 @@ module Funkdata
           end
         end
 
+        if subject == 'photographers'
+          thing.keys.each do |t|
+            thing[t] = {} unless thing[t]
+          end
+        end
+
         thing
       end
     end
