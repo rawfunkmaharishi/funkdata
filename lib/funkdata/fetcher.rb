@@ -37,7 +37,7 @@ module Funkdata
     end
 
     def self.get_thing thing
-      YAML.load get([CONFIG['github']['raw_url'], CONFIG['github']["#{thing}_path"]].join('/'))
+      YAML.load get([CONFIG['github']['urls']['raw'], CONFIG['github']['paths'][thing]].join('/'))
     end
 
     def self.method_missing method_name

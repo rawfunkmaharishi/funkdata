@@ -1,7 +1,7 @@
 module Funkdata
   class GigFetcher < Fetcher
     def self.list_gigs
-      url = [CONFIG['github']['api_url'], CONFIG['github']['gig_path']].join '/'
+      url = [CONFIG['github']['urls']['api'], CONFIG['github']['paths']['gigs']].join '/'
       j = JSON.parse get(url)
       j.select { |g| g['_links']['self'].match /yml\?/ }
     end
