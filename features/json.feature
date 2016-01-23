@@ -35,3 +35,8 @@ Feature: Get JSON
     When I send a GET request to "/photographers"
     Then the response status should be "200"
     And the JSON response should have "$.[0]['name']" with the text "kim"
+
+  Scenario: Get JSON for a photographer
+    When I send a GET request to "/photographers/kim"
+    Then the response status should be "200"
+    And the JSON response should have "$['website']" with the text "http://www.kimberlycabbott.com/"

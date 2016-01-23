@@ -62,6 +62,18 @@ module Funkdata
       end
     end
 
+    get '/photographers/:name' do
+      respond_to do |wants|
+        wants.json do
+          Fetcher.get_photographers.select { |p| p['name'] == params[:name] }[0].to_json
+        end
+
+        wants.html do
+          redirect to "http://rawfunkmaharishi.uk/"
+        end
+      end
+    end
+
     # start the server if ruby file executed directly
     run! if app_file == $0
   end
