@@ -53,9 +53,7 @@ module Funkdata
         end
 
         if subject == 'photographers'
-          thing.keys.each do |t|
-            thing[t] = {} unless thing[t]
-          end
+          thing = thing.keys.map { |p| {'name' => p, 'website' => thing.dig(p, 'website') || {} }}
         end
 
         thing
