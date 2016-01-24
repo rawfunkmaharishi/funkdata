@@ -80,8 +80,30 @@ module Funkdata
           end
         end
 
-        thing
+        cleaned_thing = []
+        thing.each do |t|
+          clean = {}
+          field_orderer(t.keys).each do |k|
+            clean[k] = t[k] if t[k]
+          end
+          cleaned_thing.push clean
+        end
+
+        cleaned_thing
       end
+    end
+
+    def self.field_orderer fields
+      fields.delete 'id'
+      prime_fields = [
+        'title',
+        'date',
+        'url',
+        'license'
+      ]
+
+      remainder = fields - prime_fields
+      prime_fields + remainder
     end
   end
 end
