@@ -16,6 +16,10 @@ module Funkdata
             'website' => 'https://www.flickr.com/photos/cluttercup'
           }
         )
+
+        expect(described_class.get_pictures[2]['url']).to eq (
+          'https://www.flickr.com/photos/cluttercup/16579675721/'
+        )
       end
     end
   end
