@@ -60,6 +60,9 @@ module Funkdata
         if subject == 'pictures'
           thing.each do |t|
             t['photographer'] = photographer(t['photographer'])
+            t['url'] = t['photo_page']
+            t.delete 'photo_page'
+            t.delete 'photo_url'
           end
         end
 
