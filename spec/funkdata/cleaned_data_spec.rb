@@ -5,7 +5,7 @@ module Funkdata
         {
           'title' => 'Raw Funk Maharishi',
           'date' => '2015-02-18',
-          'url' => 'https://www.flickr.com/photos/cluttercup/16393865760/',
+          'url' => 'https://www.flickr.com/photos/cluttercup/16395047119/',
           'license' => {
             'type' => 'Attribution-NonCommercial',
             'url' => 'https://creativecommons.org/licenses/by-nc/2.0/'
@@ -19,15 +19,14 @@ module Funkdata
 
       expect(described_class.get_sounds[0]).to eq (
         {
-          'title' => 'Slinky',
-          'date' => '2015-11-25',
-          'url' => 'http://soundcloud.com/rawfunkmaharishi/slinky-2',
+          'title' => 'NRF',
+          'date' => '2016-01-20',
+          'url' => 'http://soundcloud.com/rawfunkmaharishi/nrf',
           'license' => {
             'type' => 'Attribution-NonCommercial-ShareAlike',
             'url' => 'http://creativecommons.org/licenses/by-nc-sa/4.0/'
           },
-          'location' => 'Rogue Studios',
-          'engineer' => 'Alessio'
+          'location' => 'Rogue Studios'
         }
       )
 
