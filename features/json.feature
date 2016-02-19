@@ -30,7 +30,7 @@ Feature: Get JSON
   Scenario: Get JSON for sounds
     When I send a GET request to "/sounds"
     Then the response status should be "200"
-    And the JSON response should have "$.[3]['url']" with the text "http://soundcloud.com/rawfunkmaharishi/made-in-hong-kong"
+    And the JSON response should have "$.[4]['url']" with the text "http://soundcloud.com/rawfunkmaharishi/made-in-hong-kong"
 
   Scenario: Get JSON for photographers
     When I send a GET request to "/photographers"

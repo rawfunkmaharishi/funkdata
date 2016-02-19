@@ -18,7 +18,7 @@ module Funkdata
         )
 
         expect(described_class.get_pictures[2]['url']).to eq (
-          'https://www.flickr.com/photos/cluttercup/16579675721/'
+          'https://www.flickr.com/photos/cluttercup/15958752984/'
         )
       end
     end

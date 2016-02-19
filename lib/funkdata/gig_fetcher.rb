@@ -3,7 +3,7 @@ module Funkdata
     def self.list_gigs
       url = [CONFIG['github']['urls']['api'], CONFIG['github']['paths']['gigs']].join '/'
       j = JSON.parse get(url)
-      j.select { |g| g['_links']['self'].match /yml\?/ }
+      j.select { |g| g['name'].match /^2.*md$/ }
     end
 
     def self.get_gig url
@@ -50,7 +50,7 @@ module Funkdata
     end
 
     def self.split_name s
-      m = s.match(/(....-..-..)-(.*)\.yml/)
+      m = s.match(/(....-..-..)-(.*)\.md/)
       {
         date: m[1],
         venue: m[2]
