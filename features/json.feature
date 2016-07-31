@@ -19,8 +19,8 @@ Feature: Get JSON
   Scenario: Get JSON for pictures
     When I send a GET request to "/pictures"
     Then the response status should be "200"
-    And the JSON response should have "$.[0]['title']" with the text "New Cross Inn"
-    And the JSON response should have "$.[2]['license']['type']" with the text "Attribution-NonCommercial"
+    And the JSON response should have "$.[0]['title']" with the text "Cafe 1001, March 2016"
+    And the JSON response should have "$.[2]['license']['type']" with the text "Attribution-NonCommercial-ShareAlike"
 
   Scenario: Get JSON for videos
     When I send a GET request to "/videos"
@@ -30,7 +30,7 @@ Feature: Get JSON
   Scenario: Get JSON for sounds
     When I send a GET request to "/sounds"
     Then the response status should be "200"
-    And the JSON response should have "$.[4]['url']" with the text "http://soundcloud.com/rawfunkmaharishi/made-in-hong-kong"
+    And the JSON response should have "$.[4]['url']" with the text "http://soundcloud.com/rawfunkmaharishi/plimsole"
 
   Scenario: Get JSON for photographers
     When I send a GET request to "/photographers"
