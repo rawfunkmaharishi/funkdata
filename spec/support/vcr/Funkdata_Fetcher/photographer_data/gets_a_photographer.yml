@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://raw.githubusercontent.com/rawfunkmaharishi/rawfunkmaharishi.github.io/master/_data/photographers.yml?client_id=<GITHUB_CLIENT_ID>&client_secret=<GITHUB_CLIENT_SECRET>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Funkdata v0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Security-Policy:
+      - default-src 'none'; style-src 'unsafe-inline'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      Etag:
+      - '"066986b9b2ee5fa7bf9e77d70b95a3a7a9549598"'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Cache-Control:
+      - max-age=300
+      X-Geo-Block-List:
+      - ''
+      X-Github-Request-Id:
+      - B91F1223:3534:8A1089D:5810C6FA
+      Content-Length:
+      - '120'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 26 Oct 2016 15:08:42 GMT
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-lcy1132-LCY
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Authorization,Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Fastly-Request-Id:
+      - fd8c44c228352f48bbaf03477ca74ceca55bcf70
+      Expires:
+      - Wed, 26 Oct 2016 15:13:42 GMT
+      Source-Age:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: |
+        kim:
+          website: http://www.kimberlycabbott.com/
+
+        jane:
+          website: https://www.flickr.com/photos/cluttercup
+
+        sam:
+
+        gary:
+    http_version: 
+  recorded_at: Wed, 26 Oct 2016 15:08:42 GMT
+recorded_with: VCR 3.0.3
