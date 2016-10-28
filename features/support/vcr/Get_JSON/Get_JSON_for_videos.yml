@@ -17,35 +17,37 @@ http_interactions:
       message: OK
     headers:
       Content-Security-Policy:
-      - default-src 'none'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Frame-Options:
-      - deny
-      X-Content-Type-Options:
-      - nosniff
+      - default-src 'none'; style-src 'unsafe-inline'
       Strict-Transport-Security:
       - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
       Etag:
       - '"abb91a3b4e4e470f8cddc50fcb231ff4c0fd78e6"'
       Content-Type:
       - text/plain; charset=utf-8
       Cache-Control:
       - max-age=300
+      X-Geo-Block-List:
+      - ''
       X-Github-Request-Id:
-      - B91F1221:0C18:7FEB9E3:56C72676
+      - B91F132E:48C2:10977AE6:5813707A
       Content-Length:
       - '779'
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 19 Feb 2016 14:28:07 GMT
+      - Fri, 28 Oct 2016 15:36:27 GMT
       Via:
       - 1.1 varnish
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-lcy1122-LCY
+      - cache-lhr6328-LHR
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -55,9 +57,9 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       X-Fastly-Request-Id:
-      - 1c551d53c34a23d20b54f21fb0d5cc623b853c16
+      - 3dedaea2dddea097fec1f8b7274efac2657616ab
       Expires:
-      - Fri, 19 Feb 2016 14:33:07 GMT
+      - Fri, 28 Oct 2016 15:41:27 GMT
       Source-Age:
       - '0'
     body:
@@ -85,5 +87,5 @@ http_interactions:
           license: Attribution-NonCommercial-ShareAlike
           license_url: http://creativecommons.org/licenses/by-nc-sa/3.0/
     http_version: 
-  recorded_at: Fri, 19 Feb 2016 14:28:07 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Fri, 28 Oct 2016 15:36:27 GMT
+recorded_with: VCR 3.0.3

@@ -1,6 +1,8 @@
 require 'coveralls'
 Coveralls.wear_merged!
 
+require 'rack/test'
+
 require 'funkdata'
 require_relative 'support/vcr_setup'
 
@@ -14,4 +16,9 @@ RSpec.configure do |config|
   end
 
   config.order = :random
+
+  include Rack::Test::Methods
+  def app
+    Funkdata::App
+  end
 end

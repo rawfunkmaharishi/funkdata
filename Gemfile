@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.3.0'
 
-gem 'sinatra'
+gem 'sinatra', '~> 1'
 gem 'rack-conneg'
 gem 'rack-google-analytics'
 gem 'rake'

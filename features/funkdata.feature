@@ -1,3 +1,4 @@
+@vcr
 Feature: Make sure Funkdata is plumbed in correctly
 
   Scenario: Get root

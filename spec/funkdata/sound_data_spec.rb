@@ -3,7 +3,7 @@ module Funkdata
     context 'sound data' do
       it 'lists the sounds', :vcr do
         expect(described_class.get_sounds).to be_an Array
-        expect(described_class.get_sounds.first['url']).to eq 'http://soundcloud.com/rawfunkmaharishi/nrf'
+        expect(described_class.get_sounds.first['url']).to eq 'http://soundcloud.com/rawfunkmaharishi/new-york-stuntman'
       end
     end
   end

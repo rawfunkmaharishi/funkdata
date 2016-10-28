@@ -10,6 +10,7 @@ require_relative 'funkdata/helpers'
 require_relative 'funkdata/version'
 require_relative 'funkdata/fetcher'
 require_relative 'funkdata/gig_fetcher'
+require_relative 'funkdata/geo_json'
 
 Dotenv.load
 
@@ -51,13 +52,21 @@ module Funkdata
     get '/:path' do
       headers 'Vary' => 'Accept'
 
-      respond_to do |wants|
-        wants.json do
-          Fetcher.send("get_#{params[:path]}").to_json
-        end
+      if request.env['HTTP_ACCEPT'] == 'application/vnd.geo+json' &&
+        params[:path] == 'gigs'
 
-        wants.html do
-          redirect to "http://rawfunkmaharishi.uk/#{params[:path]}"
+        headers 'Access-Control-Allow-Origin' => '*'
+        GeoJSON.data.to_json
+      else
+
+        respond_to do |wants|
+          wants.json do
+            Fetcher.send("get_#{params[:path]}").to_json
+          end
+
+          wants.html do
+            redirect to "http://rawfunkmaharishi.uk/#{params[:path]}"
+          end
         end
       end
     end
@@ -66,7 +75,6 @@ module Funkdata
       respond_to do |wants|
         wants.json do
           Fetcher.photographer(params[:name]).to_json
-    #      Fetcher.get_photographers.select { |p| p['name'] == params[:name] }[0].to_json
         end
 
         wants.html do

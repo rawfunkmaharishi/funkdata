@@ -3,30 +3,29 @@ module Funkdata
     it 'presents the data in a consistent order', :vcr do
       expect(described_class.get_pictures[3]).to eq (
         {
-          'title' => 'Raw Funk Maharishi',
-          'date' => '2015-02-18',
-          'url' => 'https://www.flickr.com/photos/cluttercup/16395047119/',
+          'title' => 'Cafe 1001, March 2016',
+          'date' => '2016-03-24',
+          'url' => 'https://www.flickr.com/photos/rawfunkmaharishi/25757529640/',
           'license' => {
-            'type' => 'Attribution-NonCommercial',
-            'url' => 'https://creativecommons.org/licenses/by-nc/2.0/'
+            'type' => 'Attribution-NonCommercial-ShareAlike',
+            'url' => 'https://creativecommons.org/licenses/by-nc-sa/2.0/'
           },
           'photographer' => {
-            'name' => 'jane',
-            'website' => 'https://www.flickr.com/photos/cluttercup'
+            'name' => 'gary'
           }
         }
       )
 
       expect(described_class.get_sounds[0]).to eq (
         {
-          'title' => 'NRF',
-          'date' => '2016-01-20',
-          'url' => 'http://soundcloud.com/rawfunkmaharishi/nrf',
+          'title' => 'New York Stuntman',
+          'date' => '2016-09-27',
+          'url' => 'http://soundcloud.com/rawfunkmaharishi/new-york-stuntman',
           'license' => {
             'type' => 'Attribution-NonCommercial-ShareAlike',
             'url' => 'http://creativecommons.org/licenses/by-nc-sa/4.0/'
           },
-          'location' => 'Rogue Studios'
+          'location' => 'Vine Yard Studios'
         }
       )
 
