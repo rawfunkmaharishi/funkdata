@@ -18,9 +18,9 @@ module Funkdata
 
       expect(described_class.get_sounds[0]).to eq (
         {
-          'title' => 'Mudskipper',
-          'date' => '2016-07-25',
-          'url' => 'http://soundcloud.com/rawfunkmaharishi/mudskipper',
+          'title' => 'New York Stuntman',
+          'date' => '2016-09-27',
+          'url' => 'http://soundcloud.com/rawfunkmaharishi/new-york-stuntman',
           'license' => {
             'type' => 'Attribution-NonCommercial-ShareAlike',
             'url' => 'http://creativecommons.org/licenses/by-nc-sa/4.0/'

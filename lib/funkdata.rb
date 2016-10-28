@@ -53,7 +53,7 @@ module Funkdata
       headers 'Vary' => 'Accept'
 
       if request.env['HTTP_ACCEPT'] == 'application/vnd.geo+json' &&
-        params[:path].match(/$\/gigs\/?/)
+        params[:path] == 'gigs'
 
         headers 'Access-Control-Allow-Origin' => '*'
         GeoJSON.data.to_json

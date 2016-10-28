@@ -1,6 +1,6 @@
 module Funkdata
   describe GeoJSON do
-    it 'constructs GeoJSON' do
+    it 'constructs GeoJSON', :vcr do
       expect(described_class.data[:features]).to include (
         {
           geometry: {
@@ -41,6 +41,10 @@ module Funkdata
               {
                 date: '2016-05-24',
                 url: 'http://rawfunkmaharishi.uk/gigs/2016/05/24/hoxton-underbelly/'
+              },
+              {
+                date: '2016-10-24',
+                url: 'http://rawfunkmaharishi.uk/gigs/2016/10/24/hoxton-underbelly/'
               }
             ]
           }

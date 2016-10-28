@@ -19,7 +19,7 @@ module Funkdata
       end.uniq
 
       venues.each do |venue|
-        venue[:properties][:gigs] = gigs.select do |g| 
+        venue[:properties][:gigs] = gigs.select do |g|
           g['venue'] == venue[:properties][:name]
         end.map do |s|
           {
