@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.3.0'
+ruby '2.3.2'
 
 gem 'sinatra', '~> 1'
 gem 'rack-conneg'
