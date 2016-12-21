@@ -32,6 +32,8 @@ Returns a list of available endpoints.
 
 Returns a list of gig metadata.
 
+_When the client sends an `Accept: application/vnd.github.v3+json` header, GeoJSON will be returned, as used in the [gig map](http://rawfunkmaharishi.uk/gig-map/)._
+
 ### [`/sounds`](http://data.rawfunkmaharishi.uk/sounds.json)
 
 Returns a list of music metadata.
